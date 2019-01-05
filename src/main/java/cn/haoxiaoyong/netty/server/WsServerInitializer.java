@@ -28,7 +28,7 @@ public class WsServerInitializer extends ChannelInitializer<SocketChannel> {
                 //对HttpMessage进行聚合,聚合成FullHttpRequest获取FullHttpResponse
                 .addLast(new HttpObjectAggregator(1024 * 64))
 
-                //-----------支持 web Socket----------
+                //-----------支持 webSocket----------
                 //需要指定接收请求的路由
                 //必须使用 ws 后缀结尾的 url 才能访问
                 .addLast(new WebSocketServerProtocolHandler("/ws"))
