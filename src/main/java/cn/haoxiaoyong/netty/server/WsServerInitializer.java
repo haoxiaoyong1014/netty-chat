@@ -29,7 +29,7 @@ public class WsServerInitializer extends ChannelInitializer<SocketChannel> {
                 .addLast(new HttpObjectAggregator(1024 * 64))
 
                 //-----------支持 webSocket----------
-                //需要指定接收请求的路由
+                //需要指定接收请求的路由,处理握手动作(close,ping pong),ping+pong=心跳
                 //必须使用 ws 后缀结尾的 url 才能访问
                 .addLast(new WebSocketServerProtocolHandler("/ws"))
                 //添加自定义的 handler
