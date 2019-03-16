@@ -5,9 +5,11 @@ Netty结合webSocket做简单的聊天案例
 案例效果图:
 
 窗口A给窗口B发送消息:
+
 ![5791552706434_.pic.jpg](https://upload-images.jianshu.io/upload_images/15181329-435eab3ddc05f7ed.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-窗口B回复窗口A的消息
+窗口B回复窗口A的消息:
+
 ![5801552706540_.pic.jpg](https://upload-images.jianshu.io/upload_images/15181329-8a302f144acab26e.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 这里只列出前端代码:
